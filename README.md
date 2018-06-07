@@ -4,7 +4,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Overview
 
-This project gives you a ready-to-integrate Angular component for a UI slider. When originally researching this on the Angular site, I realized that there's more steps that you need to do after obtaining the mat-slider example code. This project has all of the module imports needed to get up and running quickly, as well as configure a slider. The project also includes Hammer JS, Bootstrap and default Material themes.
+This project gives you a ready-to-integrate Angular component for an Angular Material Slider, mainly using the example code from the official Angular site. When originally researching sliders, I realized that there are more steps that you need to do after obtaining the mat-slider example code. This project has all of the module imports needed to get up and running quickly. The project also includes Hammer JS, Bootstrap and default Material themes.
+
+## Deployment Steps
+
+1. Inside your Angular CLI project run `ng g c slider` and copy the <b>slider.component.xxx</b> file content into your automatically generated files.
+
+2. Copy the contents of <b>styles.css and app.module.ts</b> to your respective project files. Switch the pre-built Material Theme in the styles file if needed (all options are included in comments). The module file includes all Material imports needed for the component to work.
+
+3. Add `import 'hammerjs/hammer';` to <b>polyfills.ts</b>. This allows the slider to animate as you drag the mouse along it and prevents any delay.
+
+4. Add `<app-slider></app-slider>` inside of <b>app.component.html</b> or the HTML file of the parent component.
+
+5. `ng serve`
+
+If you encounter any issues, run `npm install --save hammerjs bootstrap @angular/material @angular/cdk` inside your project directory.
+
+**To-do: See if [ng-packagr](https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e) can export this component as CLI library instead with Angular 6
 
 ## Development server
 
