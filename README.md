@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
+## Overview
+
+This project gives you a ready-to-integrate Angular component for a UI slider. When originally researching this on the Angular site, I realized that there's more steps that you need to do after obtaining the mat-slider example code. This project has all of the module imports needed to get up and running quickly, as well as configure a slider. The project also includes Hammer JS, Bootstrap and default Material themes.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
